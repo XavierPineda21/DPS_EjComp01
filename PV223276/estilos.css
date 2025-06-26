@@ -48,13 +48,55 @@ footer {
   width: 100%;
 }
 
-/* Responsividad */
-@media (max-width: 600px) {
+
+/* Responsividad - Efraín Cortez */
+@media (max-width: 768px) {
+  header {
+    font-size: 1.2rem;
+    padding: 0.8rem;
+  }
+
   nav ul {
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 
   nav ul li {
-    margin: 0.5rem 0;
+    margin: 0.5rem;
+  }
+
+  main {
+    padding: 0.8rem;
+  }
+
+  footer {
+    font-size: 0.9rem;
+    padding: 0.4rem;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li {
+    margin: 0.3rem 0;
+  }
+
+  main {
+    font-size: 0.9rem;
+    padding: 0.5rem;
+  }
+
+  footer {
+    font-size: 0.8rem;
+    padding: 0.3rem;
   }
 }
